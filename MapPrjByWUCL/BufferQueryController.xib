@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch.iPad" variant="6xAndEarlier" propertyAccessControl="none">
+    <dependencies>
+        <deployment version="1552" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BufferQueryController">
+            <connections>
+                <outlet property="ALLleaf" destination="j6w-kz-n0Q" id="EfM-Cc-3co"/>
+                <outlet property="BoxPick" destination="oe9-qF-6NS" id="8ig-1d-pJQ"/>
+                <outlet property="Bufferdistance" destination="H2d-iZ-ts0" id="stI-L3-Lio"/>
+                <outlet property="BufferlblValue" destination="Uuk-ln-caO" id="Rxb-m5-vgL"/>
+                <outlet property="Bufferpicklist" destination="0mt-TP-Jmm" id="CdZ-9R-KMl"/>
+                <outlet property="CURleaf" destination="35S-Xn-TH6" id="G7g-Hx-Rq7"/>
+                <outlet property="PopViewSon" destination="sTU-ZU-hrG" id="397-Gx-b5J"/>
+                <outlet property="ResultView" destination="BhC-iv-KCn" id="M0N-8t-8cP"/>
+                <outlet property="Segment" destination="U7f-11-ayL" id="RHN-Mi-BPg"/>
+                <outlet property="btnBigclass" destination="40H-Um-XhX" id="8y3-tL-1W5"/>
+                <outlet property="btnCreatBuffer" destination="2mH-3g-6fw" id="JwS-Ke-7jt"/>
+                <outlet property="btnNextleaf" destination="Dj2-MA-wVj" id="nvm-RX-jiZ"/>
+                <outlet property="btnPreleaf" destination="DW0-KS-6Wc" id="kgk-JE-qH1"/>
+                <outlet property="btnSmallclass" destination="C0A-t2-v2R" id="mfJ-QT-vDb"/>
+                <outlet property="btqueryBuffer" destination="fGc-PT-6dg" id="kg1-AO-L9q"/>
+                <outlet property="tbResultview" destination="uch-is-zwU" id="sWu-mB-e1S"/>
+                <outlet property="textBigClass" destination="CYW-ZV-UPf" id="bp3-gT-44c"/>
+                <outlet property="textSmallClass" destination="uen-dy-7jc" id="BS4-ey-pme"/>
+                <outlet property="view" destination="2" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="673"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="panelbj.png" id="M6S-WA-UhJ">
+                    <rect key="frame" x="35" y="0.0" width="320" height="673"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2mH-3g-6fw">
+                    <rect key="frame" x="245" y="68" width="100" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="生成缓冲区" backgroundImage="statisticsBj.png"/>
+                    <connections>
+                        <action selector="BtnCreateBuffer:" destination="-1" eventType="touchUpInside" id="oDu-Oj-CTt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qPm-32-G7N">
+                    <rect key="frame" x="0.0" y="106" width="36" height="88"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="statisticpanelonoroff.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnBufferQueryClick:" destination="-1" eventType="touchUpInside" id="deb-FS-GCY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="eys-iE-3jp">
+                    <rect key="frame" x="50" y="32" width="100" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="绘制" backgroundImage="statisticsBj.png"/>
+                    <connections>
+                        <action selector="BtnDrawBuffer:" destination="-1" eventType="touchUpInside" id="Mgu-BS-eCs"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="200" borderStyle="roundedRect" minimumFontSize="17" id="H2d-iZ-ts0">
+                    <rect key="frame" x="147" y="68" width="64" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="缓冲区半径:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AeL-sb-Eeo">
+                    <rect key="frame" x="50" y="66" width="94" height="34"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="米" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="41f-I0-FkW">
+                    <rect key="frame" x="213" y="70" width="26" height="27"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距离：" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Uuk-ln-caO">
+                    <rect key="frame" x="160" y="32" width="185" height="26"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="选择小类... ..." minimumFontSize="17" id="uen-dy-7jc">
+                    <rect key="frame" x="63" y="164" width="209" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="选择大类... ..." minimumFontSize="17" id="CYW-ZV-UPf">
+                    <rect key="frame" x="63" y="117" width="209" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="40H-Um-XhX">
+                    <rect key="frame" x="287" y="117" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="tintColor" red="0.229651667" green="0.41567932120000001" blue="0.49818638389999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="selsecbj.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="BtnBigclass:" destination="-1" eventType="touchUpInside" id="6zJ-iY-YaP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="C0A-t2-v2R">
+                    <rect key="frame" x="287" y="164" width="30" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="tintColor" red="0.229651667" green="0.41567932120000001" blue="0.49818638389999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" image="selsecbj.png">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="BtnSmallclass:" destination="-1" eventType="touchUpInside" id="ZDZ-oW-WC8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="fGc-PT-6dg">
+                    <rect key="frame" x="240" y="210" width="100" height="29"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="查询" backgroundImage="statisticsBj.png"/>
+                    <connections>
+                        <action selector="btnbufferquery:" destination="-1" eventType="touchUpInside" id="JvL-Ey-LmJ"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" id="oe9-qF-6NS">
+                    <rect key="frame" x="50" y="100" width="295" height="140"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="panelbj.png" highlightedImage="panelbj.png" id="DlV-yp-0v0">
+                            <rect key="frame" x="0.0" y="0.0" width="295" height="140"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ANF-Le-PnL">
+                            <rect key="frame" x="236" y="65" width="59" height="27"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="确定" backgroundImage="statisticsBj.png"/>
+                            <connections>
+                                <action selector="selectType:" destination="-1" eventType="touchUpInside" id="4bx-Kl-Dnw"/>
+                            </connections>
+                        </button>
+                        <pickerView contentMode="scaleToFill" id="0mt-TP-Jmm">
+                            <rect key="frame" x="0.0" y="0.0" width="235" height="140"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="AGS-JR-fe2"/>
+                                <outlet property="delegate" destination="-1" id="DPY-ic-wZD"/>
+                            </connections>
+                        </pickerView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" id="BhC-iv-KCn">
+                    <rect key="frame" x="50" y="260" width="295" height="359"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tableBJ.png" id="s6D-FP-7ko">
+                            <rect key="frame" x="-5" y="-5" width="305" height="340"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="uch-is-zwU">
+                            <rect key="frame" x="5" y="5" width="285" height="320"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="rw7-Nh-e0E"/>
+                                <outlet property="delegate" destination="-1" id="UW6-cB-aR3"/>
+                            </connections>
+                        </tableView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Dj2-MA-wVj">
+                            <rect key="frame" x="227" y="334" width="68" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="下一页" backgroundImage="statisticsBj.png"/>
+                            <connections>
+                                <action selector="btnNextClick:" destination="-1" eventType="touchUpInside" id="9ui-Sq-GcW"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="35S-Xn-TH6">
+                            <rect key="frame" x="56" y="338" width="17" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="cTl-bD-g1F">
+                            <rect key="frame" x="87" y="338" width="17" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="j6w-kz-n0Q">
+                            <rect key="frame" x="100" y="338" width="43" height="21"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DW0-KS-6Wc">
+                            <rect key="frame" x="151" y="334" width="68" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="上一页" backgroundImage="statisticsBj.png"/>
+                            <connections>
+                                <action selector="btnPreClick:" destination="-1" eventType="touchUpInside" id="73r-uu-ZfI"/>
+                            </connections>
+                        </button>
+                        <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="U7f-11-ayL">
+                            <rect key="frame" x="0.0" y="20" width="256" height="26"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="管点"/>
+                                <segment title="管线"/>
+                                <segment title="井室线"/>
+                            </segments>
+                        </segmentedControl>
+                    </subviews>
+                </view>
+                <view alpha="0.20000000000000001" contentMode="scaleToFill" id="sTU-ZU-hrG">
+                    <rect key="frame" x="0.0" y="0.0" width="360" height="800"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <inset key="insetFor6xAndEarlier" minX="0.0" minY="20" maxX="0.0" maxY="-20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="panelbj.png" width="327" height="671"/>
+        <image name="selsecbj.png" width="43" height="41"/>
+        <image name="statisticpanelonoroff.png" width="45" height="88"/>
+        <image name="statisticsBj.png" width="1285" height="787"/>
+        <image name="tableBJ.png" width="300" height="400"/>
+    </resources>
+</document>

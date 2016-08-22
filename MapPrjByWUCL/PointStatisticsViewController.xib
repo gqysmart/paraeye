@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PointStatisticsViewController">
+            <connections>
+                <outlet property="BtnselectValue" destination="Mzn-eL-QlX" id="vQS-6v-GRP"/>
+                <outlet property="ClassPick" destination="CG8-aj-TPo" id="66t-0b-MX0"/>
+                <outlet property="ResultTable" destination="gDT-7H-baV" id="Ldl-qA-Dv6"/>
+                <outlet property="StatisitcsPopView" destination="mek-Qq-goJ" id="TCE-VW-DIE"/>
+                <outlet property="StatisticResultBox" destination="4ZI-h3-kQh" id="Kbx-8i-wBi"/>
+                <outlet property="TextBigclass" destination="QlB-4l-YW2" id="nPM-Ae-3Sy"/>
+                <outlet property="TextRange" destination="1kR-JI-SpC" id="uIF-zx-icu"/>
+                <outlet property="TextSmallclass" destination="HzZ-iD-DC9" id="aJU-E2-RkY"/>
+                <outlet property="TextSon" destination="0jU-W4-JnO" id="pFy-qJ-pf2"/>
+                <outlet property="ViewOFPick" destination="Bat-0l-SKV" id="dET-MJ-Sza"/>
+                <outlet property="activityIndicatorView" destination="4QQ-f9-MOW" id="fLB-x5-7f6"/>
+                <outlet property="view" destination="1" id="lo7-6i-EP0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="PointStatistiscViewController"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="640" height="310"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="statisticsBj.png" translatesAutoresizingMaskIntoConstraints="NO" id="qHp-Hb-vas">
+                    <rect key="frame" x="0.0" y="0.0" width="640" height="310"/>
+                </imageView>
+                <button opaque="NO" tag="11" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJi-dY-fH5">
+                    <rect key="frame" x="175" y="120" width="24" height="29"/>
+                    <state key="normal" image="Goarrow.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectClassClick:" destination="-1" eventType="touchUpInside" id="WqY-yy-aDU"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="大类" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QlB-4l-YW2">
+                    <rect key="frame" x="35" y="55" width="131" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="小类" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HzZ-iD-DC9">
+                    <rect key="frame" x="35" y="120" width="134" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="|" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sZB-rr-BLT">
+                    <rect key="frame" x="95" y="88" width="20" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button hidden="YES" opaque="NO" tag="12" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90R-3f-3m9">
+                    <rect key="frame" x="341" y="116" width="24" height="29"/>
+                    <state key="normal" image="Goarrow.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectClassClick:" destination="-1" eventType="touchUpInside" id="YjS-AD-LGn"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="统计范围" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1kR-JI-SpC">
+                    <rect key="frame" x="35" y="185" width="134" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="详细内容" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0jU-W4-JnO">
+                    <rect key="frame" x="199" y="114" width="131" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="管点数量统计" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxR-fH-7XR">
+                    <rect key="frame" x="15" y="15" width="150" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bGm-ym-wP5">
+                    <rect key="frame" x="48" y="246" width="105" height="30"/>
+                    <state key="normal" title="统计">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="BtnStatistic:" destination="-1" eventType="touchUpInside" id="eV4-bm-gys"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="13" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4d7-v4-jii">
+                    <rect key="frame" x="175" y="185" width="24" height="29"/>
+                    <state key="normal" image="Goarrow.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="selectClassClick:" destination="-1" eventType="touchUpInside" id="YUa-mb-76U"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4ZI-h3-kQh">
+                    <rect key="frame" x="206" y="24" width="410" height="272"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tableBJ.png" translatesAutoresizingMaskIntoConstraints="NO" id="IfZ-UT-VTr">
+                            <rect key="frame" x="-5" y="25" width="423" height="240"/>
+                        </imageView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="25" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="gDT-7H-baV">
+                            <rect key="frame" x="5" y="30" width="400" height="228"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="cPi-ur-uT0"/>
+                                <outlet property="delegate" destination="-1" id="tER-Yu-f8O"/>
+                            </connections>
+                        </tableView>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="管点类型" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGn-bo-z6x">
+                            <rect key="frame" x="0.0" y="3" width="133" height="25"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="属性值" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqi-jj-Ov9">
+                            <rect key="frame" x="136" y="3" width="170" height="25"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="数量" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Huy-K3-uDa">
+                            <rect key="frame" x="306" y="3" width="96" height="25"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </view>
+                <view hidden="YES" autoresizesSubviews="NO" opaque="NO" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bat-0l-SKV">
+                    <rect key="frame" x="8" y="50" width="250" height="200"/>
+                    <subviews>
+                        <pickerView autoresizesSubviews="NO" clipsSubviews="YES" tag="10" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CG8-aj-TPo">
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="216"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="RQb-n9-O4m"/>
+                                <outlet property="delegate" destination="-1" id="32N-J5-vLg"/>
+                            </connections>
+                        </pickerView>
+                        <button opaque="NO" contentMode="bottomLeft" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mzn-eL-QlX">
+                            <rect key="frame" x="180" y="170" width="63" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" title="确定" backgroundImage="statisticsBj.png"/>
+                            <connections>
+                                <action selector="setClassClick:" destination="-1" eventType="touchUpInside" id="aZ9-GB-CLx"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="0.0"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qE7-UC-eiG">
+                    <rect key="frame" x="595" y="5" width="35" height="35"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" image="btback.png">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="btnCloseclick:" destination="-1" eventType="touchUpInside" id="6EB-EZ-bHg"/>
+                    </connections>
+                </button>
+                <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mek-Qq-goJ">
+                    <rect key="frame" x="0.0" y="0.0" width="640" height="500"/>
+                    <subviews>
+                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="hourglass.png" translatesAutoresizingMaskIntoConstraints="NO" id="a3x-yW-nAN">
+                            <rect key="frame" x="266" y="177" width="100" height="96"/>
+                        </imageView>
+                        <activityIndicatorView hidden="YES" opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="4QQ-f9-MOW">
+                            <rect key="frame" x="301" y="150" width="37" height="37"/>
+                            <color key="color" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        </activityIndicatorView>
+                    </subviews>
+                </view>
+            </subviews>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+            <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Goarrow.png" width="24" height="24"/>
+        <image name="btback.png" width="40" height="43"/>
+        <image name="hourglass.png" width="80" height="80"/>
+        <image name="statisticsBj.png" width="1285" height="787"/>
+        <image name="tableBJ.png" width="300" height="400"/>
+    </resources>
+</document>
